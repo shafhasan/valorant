@@ -25,7 +25,77 @@
         </div>
       </div>
     </nav>
+    <div class="banner">
+      <div class="container">
+        <h1>VALORANT</h1>
+      </div>
+    </div>
   </header>
+  <section id="about">
+    <div class="about-details">
+      <h2>ABOUT</h2>
+      <p>Valorant is a 5v5 character-based tactical shooter. With gunplay and special abilities, 13 rounds are needed to
+        secure the victory through both attack and defense. Every player has one-life per round and they must be
+        creative in
+        order to get an upperhand on their opponents. Different agents have different skill sets which must be utilized
+        properly
+        to gain the most value out of them. Guns and abilities are purchased at the beginning of every round with the
+        credits
+        earned from each round win or loss. With different games modes to play on, players can select whether they want
+        to earn
+        ranks based on their performance in Competitive or play a casual game of Unranked or Spike Rush. Gunplay can be
+        practiced in Deathmatch and all these modes are played in a pool of 6 maps.</p>
+    </div>
+  </section>
+  <section id="info">
+    <div class="agent-box">
+      <h2>AGENTS</h2>
+      <div class="agent-slide">
+        <div class="agent-slide-container">
+          <div class="agents">
+            <img src="images/brimstone.png" alt="Brimstone">
+            <div class="caption">Brimstone</div>
+          </div>
+          <div class="agents">
+            <img src="images/viper.png" alt="Viper">
+            <div class="caption">Viper</div>
+          </div>
+          <div class="agents">
+            <img src="images/omen.png" alt="Omen">
+            <div class="caption">Omen</div>
+          </div>
+          <a class="prev" onclick="agentSlides(-1)">&#10094</a>
+          <a class="next" onclick="agentSlides(1)">&#10095</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="gun-map-box">
+      <div class="gun-box">
+        <h2>GUNS</h2>
+        <div class="gun-slide">
+          <div class="gun-slide-container">
+            <div class="guns">
+              <img src="images/classic.png" alt="Classic">
+              <div class="caption">Classic</div>
+            </div>
+            <div class="guns">
+              <img src="images/ghost.png" alt="Ghost">
+              <div class="caption">Ghost</div>
+            </div>
+            <div class="guns">
+              <img src="images/sheriff.png" alt="Sheriff">
+              <div class="caption">Sheriff</div>
+            </div>
+            <a class="prev" onclick="gunSlides(-1)">&#10094</a>
+            <a class="next" onclick="gunSlides(1)">&#10095</a>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
