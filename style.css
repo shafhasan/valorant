@@ -224,7 +224,43 @@ footer p {
   color: #DBD2D2;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:450px) {
+  header {
+    background-position: center;
+  }
+  .logo {
+    width: 40px;
+    height: auto;
+    margin: 15px 15px 15px 10px;
+  }
+  .links a {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .container h1 {
+    font-size: 80px;
+  }
+  .about-details {
+    width: 80%;
+    line-height: 30px;
+  }
+  .agent-box .agent-slide, .gun-box .gun-slide, .map-box .map-slide {
+    width: 80%;
+  }
+  .gun-map-box {
+    flex-direction: column;
+  }
+  .maps img {
+    padding: 55px 35px 0 35px;
+  }
+  .sys-container {
+    overflow-x: auto;
+    display: block;
+    margin: 0 20px;
+  }
+}
+
+/* @media screen and (max-width:600px) {
   header {
     background-position: center;
   }
@@ -258,4 +294,4 @@ footer p {
     display: block;
     margin: 0 20px;
   }
-}
+} */
