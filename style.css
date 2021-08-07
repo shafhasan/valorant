@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik);
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,18 +23,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  opacity: 1;
 }
 
 .logo {
   width: 60px;
-  height: auto;
   margin: 15px;
 }
-
-/* .links-container {
-  height: auto;
-} */
 
 .links {
   display: flex;
@@ -75,7 +70,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100vw;
+  padding-bottom: 20px;
 }
 
 .about-details {
@@ -100,11 +95,7 @@ header {
   padding: 10px 0;
 }
 
-/* .agent-box {
-  background-color: #DBD2D2;
-} */
-
-.agent-box h2 {
+.agent-box h2, .gun-box h2, .map-box h2 {
   text-align: center;
   font-size: 30px;
 }
@@ -158,11 +149,6 @@ header {
   flex-direction: row;
   justify-content: space-around;
   padding: 10px 0 20px 0;
-}
-
-.gun-box h2, .map-box h2 {
-  text-align: center;
-  font-size: 30px;
 }
 
 .gun-box .gun-slide, .map-box .map-slide {
@@ -227,13 +213,49 @@ td {
   text-align: center;
 }
 
-footer{
-  background-color: rgb(32, 32, 32);
+footer {
+  background-color: #202020;
   padding: 50px 10px;
   text-align: center;
 }
 
-footer p{
+footer p {
   font-size: 16px;
   color: #DBD2D2;
+}
+
+@media screen and (max-width:600px) {
+  header {
+    background-position: center;
+  }
+  .logo {
+    width: 50px;
+    height: auto;
+    margin: 15px 15px 15px 0;
+  }
+  .links a {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .container h1 {
+    font-size: 100px;
+  }
+  .about-details {
+    width: 75%;
+    line-height: 30px;
+  }
+  .agent-box .agent-slide, .gun-box .gun-slide, .map-box .map-slide {
+    width: 75%;
+  }
+  .gun-map-box {
+    flex-direction: column;
+  }
+  .maps img {
+    padding: 55px 35px 0 35px;
+  }
+  .sys-container {
+    overflow-x: auto;
+    display: block;
+    margin: 0 20px;
+  }
 }
