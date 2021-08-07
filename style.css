@@ -224,7 +224,7 @@ footer p {
   color: #DBD2D2;
 }
 
-@media screen and (min-width:400px) and (max-width:599px){
+@media screen and (min-width:350px) and (max-width:599px){
   header {
     background-position: center;
   }
