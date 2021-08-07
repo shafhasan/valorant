@@ -1,8 +1,6 @@
 //Agent slides
 const agentSlides = n => showAgentSlides(agentSlideIndex += n);
 
-// const currentSlide = n => showAgentSlides(agentSlideIndex = n);
-
 const showAgentSlides = n => {
   const slides = document.getElementsByClassName('agents');
   if (n > slides.length) {
@@ -23,8 +21,6 @@ showAgentSlides(agentSlideIndex);
 //Gun slides
 const gunSlides = n => showGunSlides(gunSlideIndex += n);
 
-// const currentSlide = n => showGunSlides(gunSlideIndex = n);
-
 const showGunSlides = n => {
   const slides = document.getElementsByClassName('guns');
   if (n > slides.length) {
@@ -41,3 +37,23 @@ const showGunSlides = n => {
 
 let gunSlideIndex = 1;
 showGunSlides(gunSlideIndex);
+
+//Map slides
+const mapSlides = n => showMapSlides(mapSlideIndex += n);
+
+const showMapSlides = n => {
+  const slides = document.getElementsByClassName('maps');
+  if (n > slides.length) {
+    mapSlideIndex = 1;
+  }
+  if (n < 1) {
+    mapSlideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[mapSlideIndex - 1].style.display = "block";
+}
+
+let mapSlideIndex = 1;
+showMapSlides(mapSlideIndex);
